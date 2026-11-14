@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Ajmeer | Software Engineering Graduate, Kandy</title>
+<meta name="description" content="Portfolio of Mohamed Nizam Mohamed Ajmeer, a BEng (Hons) Software Engineering graduate in Kandy, Sri Lanka, looking for an IT internship.">
+<meta property="og:title" content="Mohamed Ajmeer | Software Engineering Graduate">
+<meta property="og:description" content="Web and desktop projects in PHP, C#, .NET, JavaScript and MySQL. Open to IT internships.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f4e79'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='Georgia'%3EMA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fafbfc; --ink:#1b2430; --muted:#5b6674; --line:#dde2e8; --accent:#1f4e79; --accent-soft:#e8eff6;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12171d; --ink:#e6eaef; --muted:#9aa5b2; --line:#2a323c; --accent:#8fb8de; --accent-soft:#1c2733}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.5rem .75rem;z-index:10}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:15rem 1fr;gap:4rem}
+header{position:sticky;top:0;align-self:start;padding:4rem 0 2rem;height:100vh;display:flex;flex-direction:column}
+.photo{display:block;width:112px;height:140px;object-fit:cover;object-position:center top;border-radius:3px;margin:0 0 1.25rem;background:var(--accent-soft)}
+.name{font:600 1.6rem/1.2 var(--serif);margin:0 0 .35rem;letter-spacing:-.01em}
+.role{margin:0;color:var(--muted);font-size:.95rem}
+nav ul{list-style:none;margin:2.5rem 0 0;padding:0}
+nav a{display:block;padding:.3rem 0 .3rem .9rem;border-left:2px solid var(--line);color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover,nav a[aria-current="true"]{color:var(--ink);border-left-color:var(--accent)}
+.side-links{margin-top:auto;font-size:.9rem;color:var(--muted)}
+.side-links a{display:block}
+main{padding:4rem 0 5rem;min-width:0}
+section{padding-bottom:3.5rem;margin-bottom:3.5rem;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0;margin-bottom:0}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.15;margin:0 0 1.25rem;max-width:20ch}
+h2{font-size:1.45rem;margin:0 0 1.25rem}
+h3{font-size:1.15rem;margin:0}
+p{margin:0 0 1rem;max-width:62ch}
+.lead{font-size:1.1rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.6rem 1.1rem;border:1px solid var(--accent);border-radius:3px;text-decoration:none;font-weight:500;font-size:.95rem}
+.btn.primary{background:var(--accent);color:var(--paper)}
+.btn:hover{background:var(--accent-soft);color:var(--accent)}
+.btn.primary:hover{opacity:.9;background:var(--accent);color:var(--paper)}
+dl{margin:0}
+.row{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem;padding:.7rem 0;border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+dt{color:var(--muted);font-size:.92rem}
+dd{margin:0}
+.edu{padding:1rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:9.5rem 1fr;gap:1rem}
+.edu:last-child{border-bottom:1px solid var(--line)}
+.edu time{color:var(--muted);font-size:.92rem}
+.edu p{margin:.15rem 0 0;color:var(--muted);font-size:.95rem}
+.project{padding:1.5rem 0;border-top:1px solid var(--line)}
+.project:last-child{border-bottom:1px solid var(--line)}
+.project p{margin:.5rem 0 .75rem}
+.stack{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.stack li{font-size:.82rem;padding:.15rem .55rem;background:var(--accent-soft);color:var(--accent);border-radius:2px}
+.plinks{margin-top:.9rem;font-size:.92rem}
+.plinks span{color:var(--muted)}
+.langs{color:var(--muted);font-size:.95rem}
+footer{font-size:.88rem;color:var(--muted);padding:0 0 3rem}
+@media (max-width:52rem){
+  .wrap{display:block;padding:0 1.25rem}
+  header{position:static;height:auto;padding:2rem 0 0}
+  nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;margin-top:1.25rem}
+  nav a{border:0;padding:.2rem 0;text-decoration:underline;text-decoration-color:var(--line)}
+  .side-links{display:none}
+  main{padding-top:2.5rem}
+  .row,.edu{grid-template-columns:1fr;gap:.15rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header>
+  <img class="photo" src="images/profile.jpg" alt="Portrait of Mohamed Ajmeer" width="112" height="140" decoding="async" onerror="this.remove()">
+  <p class="name">Mohamed Ajmeer</p>
+  <p class="role">Software Engineering graduate<br>Kandy, Sri Lanka</p>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#home">Introduction</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="side-links">
+    <a href="mailto:mohamedajmeer672@gmail.com">mohamedajmeer672@gmail.com</a>
+    <a href="tel:+94770284596">+94 77 028 4596</a>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home">
+    <h1>I build web and desktop applications backed by relational databases.</h1>
+    <p class="lead">I recently finished a BEng (Hons) in Software Engineering at London Metropolitan University, studied through ESoft Metro Campus in Kandy. I am looking for an IT internship where I can work on real software and learn from an engineering team.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="mailto:mohamedajmeer672@gmail.com">Email me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>My degree work covered the full software development life cycle: gathering requirements, modelling with UML, designing databases, building the application and presenting it. Most of my projects are database-driven systems for realistic settings such as a bookstore, a pharmacy, a bus service and gas distribution.</p>
+    <p>I work mainly in PHP, C# and JavaScript, and I have also used Java, Dart and Flutter. I use AI tools to speed up development, and I check and understand what they produce before using it.</p>
+    <p>I am comfortable working in a team, meeting deadlines, and working rotational shifts when the role needs it.</p>
+    <p class="langs">Languages: Tamil (fluent), English (good), Sinhala (good).</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical skills</h2>
+    <dl id="skill-list"></dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div id="edu-list"></div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <p>Academic projects completed during my HND and BEng. Source code links appear next to each project once the repository is published.</p>
+    <div id="project-list"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I am available for IT internships. Email is the quickest way to reach me.</p>
+    <dl>
+      <div class="row"><dt>Email</dt><dd><a href="mailto:mohamedajmeer672@gmail.com">mohamedajmeer672@gmail.com</a></dd></div>
+      <div class="row"><dt>Phone</dt><dd><a href="tel:+94770284596">+94 77 028 4596</a></dd></div>
+      <div class="row"><dt>Location</dt><dd>Kandy, Sri Lanka</dd></div>
+      <div class="row" id="gh-row" hidden><dt>GitHub</dt><dd><a id="gh-link" href="#"></a></dd></div>
+      <div class="row" id="li-row" hidden><dt>LinkedIn</dt><dd><a id="li-link" href="#"></a></dd></div>
+    </dl>
+  </section>
+  <footer>&copy; <span id="yr"></span> Mohamed Nizam Mohamed Ajmeer</footer>
+</main>
+</div>
+
+<script>
+/* ---- Edit this block only. Leave a value empty to hide its link. ---- */
+const PROFILE = {
+  github: "",    // e.g. "https://github.com/your-username"
+  linkedin: ""   // e.g. "https://www.linkedin.com/in/your-name"
+};
+
+const SKILLS = [
+  ["Languages", "PHP, JavaScript, Java, C#, Dart"],
+  ["Web", "HTML, CSS, Bootstrap"],
+  ["Frameworks", "Flutter, .NET, ASP.NET MVC"],
+  ["Databases", "MySQL, SQL Server"],
+  ["Design", "Figma, Adobe Photoshop, Canva"],
+  ["Tools", "Git, GitHub, Visual Studio Code, Android Studio"],
+  ["Practice", "OOP, SDLC, UML, database design, AI-assisted development"]
+];
+
+const EDUCATION = [
+  ["2025", "BEng (Hons) Software Engineering (top-up)", "London Metropolitan University, delivered at ESoft Metro Campus, Kandy"],
+  ["2023 to 2024", "Pearson BTEC Level 5 HND in Information Technology", "Software Engineering pathway, ESoft Metro Campus, Kandy"],
+  ["2021", "G.C.E. Advanced Level", "Azhar Central College, Akurana, Kandy"],
+  ["2018", "G.C.E. Ordinary Level", "Azhar Central College, Akurana, Kandy"]
+];
+
+/* repo: add the real repository URL when it is published. */
+const PROJECTS = [
+  { name: "GasByGas: LP gas distribution management system",
+    text: "A web system for managing the distribution of LP gas. Planning covered UML diagrams, interface mockups in Figma and a project schedule in MS Project before the PHP and MySQL build.",
+    stack: ["PHP","MySQL","JavaScript","Bootstrap","Figma","UML","MS Project"], repo: "" },
+  { name: "Bio Pharma: pharmacy website",
+    text: "A pharmacy website with a MySQL-backed PHP back end. Interfaces were prototyped in Figma and graphics prepared in Photoshop.",
+    stack: ["PHP","MySQL","HTML","JavaScript","Bootstrap","Figma"], repo: "" },
+  { name: "Photography marketplace platform",
+    text: "A web platform for presenting and selling photography, built on a WAMP stack with a MySQL database.",
+    stack: ["PHP","JavaScript","HTML","CSS","Bootstrap","MySQL","Photoshop"], repo: "" },
+  { name: "DreamDay: wedding planner web application",
+    text: "A wedding planning application built with the .NET Framework and C#, storing its data in SQL Server.",
+    stack: ["C#",".NET Framework","SQL Server"], repo: "" },
+  { name: "BookHaven: bookstore management system",
+    text: "A Windows Forms desktop application for managing a bookstore, with data held in MySQL.",
+    stack: ["C#","Windows Forms","MySQL"], repo: "" },
+  { name: "Bus reservation system",
+    text: "A web-based reservation system for bus travel, run locally on XAMPP with a MySQL database.",
+    stack: ["Java","HTML","CSS","Bootstrap","MySQL","XAMPP"], repo: "" }
+];
+/* ---------------------------------------------------------------------- */
+
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  kids.forEach(k => n.append(k));
+  return n;
+};
+
+const skillList = document.getElementById("skill-list");
+SKILLS.forEach(([k, v]) => skillList.append(el("div", {class:"row"}, el("dt", {}, k), el("dd", {}, v))));
+
+const eduList = document.getElementById("edu-list");
+EDUCATION.forEach(([when, title, where]) => {
+  eduList.append(el("div", {class:"edu"}, el("time", {}, when),
+    el("div", {}, el("h3", {}, title), el("p", {}, where))));
+});
+
+const projList = document.getElementById("project-list");
+PROJECTS.forEach(p => {
+  const stack = el("ul", {class:"stack", "aria-label":"Technologies used"});
+  p.stack.forEach(s => stack.append(el("li", {}, s)));
+  const art = el("article", {class:"project"}, el("h3", {}, p.name), el("p", {}, p.text), stack);
+  if (p.repo) art.append(el("p", {class:"plinks"}, el("a", {href:p.repo, rel:"noopener"}, "View source on GitHub")));
+  projList.append(art);
+});
+
+[["github","gh"],["linkedin","li"]].forEach(([key, id]) => {
+  if (!PROFILE[key]) return;
+  const a = document.getElementById(id + "-link");
+  a.href = PROFILE[key]; a.textContent = PROFILE[key].replace(/^https?:\/\/(www\.)?/, "");
+  document.getElementById(id + "-row").hidden = false;
+});
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* highlight current section in the nav */
+const links = [...document.querySelectorAll("nav a")];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) links.forEach(l => l.setAttribute("aria-current", String(l.hash === "#" + e.target.id)));
+}), {rootMargin:"-30% 0px -60% 0px"});
+document.querySelectorAll("main section").forEach(s => io.observe(s));
+</script>
+</body>
+</html>
